@@ -75,7 +75,7 @@ async def run_scheduler():
 async def on_ready():
     channel = client.get_channel(channel_id)
     if channel:
-        await channel.send("Le bot est prêt !")
+        await channel.send("Bot is ready !")
     client.loop.create_task(run_scheduler())
 
 @client.event
